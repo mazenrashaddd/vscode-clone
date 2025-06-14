@@ -1,54 +1,37 @@
-# React + TypeScript + Vite
+# 🖥️ vscode-clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A visually accurate and responsive clone of **Visual Studio Code**, built using **React**, **Vite**, and **Tailwind CSS**. This project emulates VS Code's interface and core layout, offering a slick frontend UI for educational or demo purposes.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🧭 Side bar with icons and sections (Explorer, Search, Source Control, Extensions)
+- 🗂️ File explorer and tabbed editor UI
+- 🌙 Dark theme styled after the real VS Code
+- 📐 Responsive layout using Flexbox and CSS Grid
+- ⚡ Super-fast bundling with **Vite**
+- 💅 Styled using **Tailwind CSS**
+- ⚛️ Built with **React** and functional components
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📦 Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **React** – Component-based UI
+- **Vite** – Lightning-fast development server
+- **Tailwind CSS** – Utility-first styling
+- **TypeScript** – Type-safe development
+- **Redux Toolkit** – State management
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🛠️ Getting Started
+
+Follow these steps to set up and run the project locally.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/vscode-clone.git
+cd vscode-clone
