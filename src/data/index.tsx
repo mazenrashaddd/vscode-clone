@@ -7,6 +7,18 @@ export const fileTree: IFile = {
     {
       name: "node_modules",
       isFolder: true,
+      children: [
+        {
+          name: "vite",
+          isFolder: true,
+          children: [
+            {
+              name: "vite.tsx",
+              isFolder: false,
+            },
+          ],
+        },
+      ],
     },
     {
       name: "index.html",

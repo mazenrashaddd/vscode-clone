@@ -5,6 +5,7 @@ interface IFileComponent {
 const FileComponent = ({ fileName }: IFileComponent) => {
   return (
     <div className="flex items-center space-x-1">
+      <span>{">"}</span>
       <svg
         aria-hidden="true"
         focusable="false"

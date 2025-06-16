@@ -1,13 +1,10 @@
 import FileComponent from "./components/FileComponents";
+import { fileTree } from "./data";
 
 function App() {
-  return (
-    <>
-      <FileComponent fileName="index.tsx"></FileComponent>
-      <FileComponent fileName="index.html"></FileComponent>
-      <FileComponent fileName="tailwind.css"></FileComponent>
-    </>
-  );
+  return fileTree.children?.map((file) => {
+    return <FileComponent fileName={file.name}></FileComponent>;
+  });
 }
 
 export default App;
